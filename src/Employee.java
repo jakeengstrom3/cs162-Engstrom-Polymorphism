@@ -83,4 +83,11 @@ public class Employee {
     public String motto(){
         return "We value our employees";
     }
+
+    public boolean equals(Employee e){
+        return this.baseSalary == e.getBaseSalary()
+                && this.name.equals(e.getName())
+                && this.yearsAtCompany == e.getYearsAtCompany()
+                && this.yearsOfExperience == e.getYearsOfExperience();
+    }
 }
